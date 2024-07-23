@@ -31,7 +31,8 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(3, 120, 64, 0.722) 100%, rgba(3, 103, 55, 0.67) 100%), url(/Assets/pexels-iisaacpollock-4140556.jpg);
+    background-image: linear-gradient(to top, rgba(3, 120, 64, 0.722) 100%, rgba(3, 103, 55, 0.67) 100%),
+    url(/Assets/pexels-iisaacpollock-4140556.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -97,6 +98,7 @@ header{
     font-size: 60px;
     margin-bottom: 15px;
     letter-spacing: 0.1cm;
+    cursor: pointer;
 }
 
 .copy{
