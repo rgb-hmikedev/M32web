@@ -41,6 +41,7 @@ header{
 
 
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -70,14 +71,15 @@ header{
     right: 0;
     width: 30vw;
     height: 100%;
-    background-image: linear-gradient(to top, #037840 100%, #037840 100%)
+    background-image: linear-gradient(to top, #037840 100%, #037840 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /*transition:transform .3s ease-in-out;*/
-    transform: translate(110%);
+    transition:transform .3s ease-in-out;
+    transform: translate(100%);
     box-shadow:0 0 6px rgba(0,0,0,.5) ;
+    cursor: pointer;
 
 }
 
@@ -86,12 +88,13 @@ header{
 
 
 .spread{
-    transform: translate(0);
+    transform: translate(0%);
 }
 
 .menu-navegacion a{
     color: #ffff;
     text-decoration: none;
+    
 }
 
 .titulo{
@@ -159,6 +162,7 @@ header{
 }
 
 .img-galeria{
+    object-fit: cover;
     width: 30%;
     height: 30%;
     display:block;
@@ -186,6 +190,7 @@ header{
 }
 
 .agregar-imagen{
+    object-fit:cover;
     width: 60%;
     border-radius: 10px;
     transition: transform .3s .2s;
@@ -289,3 +294,112 @@ footer{
     line-height: 60px;
 }
 
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+/*Media querys*/
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img{
+        width:80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width:45%;
+    }
+
+    .cont-expert{
+        width:80%;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+
+
+}
+
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    .titulo{
+        font-size: 38px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+
+    .copy{
+        font-size: 1rem;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .contact-us{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+
+}
