@@ -29,7 +29,7 @@ body{
     padding: 60px 0;
 }
 
-header{
+.header{
     height: 100vh;
     background-image: linear-gradient(to top, rgba(3, 120, 64, 0.722) 100%, rgba(3, 103, 55, 0.67) 100%), url(/Assets/maquina.jpg);
     background-repeat: no-repeat;
@@ -38,6 +38,8 @@ header{
     background-position: center;
     
 }
+
+
 
 
 .head{
