@@ -1,130 +1,650 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./Style/styles.css">
+    <meta name="description" content="M32 Constructora - Cimientos sólidos, sueños cumplidos. Expertos en construcción de casas, naves industriales, mantenimiento y diseño de interiores.">
+    <meta name="keywords" content="construcción, casas, mantenimiento industrial, diseño interiores, naves industriales, M32">
+    <meta name="author" content="M32 Constructora">
+    
+    <meta property="og:title" content="M32 Constructora | Cimientos Sólidos, Sueños Cumplidos">
+    <meta property="og:description" content="Excelencia en construcción con más de 20 años de experiencia. Calidad, honestidad y profesionalismo.">
+    <meta property="og:type" content="website">
+    
+    <title>M32 Constructora | Cimientos Sólidos, Sueños Cumplidos</title>
+    
+    <link rel="icon" type="image/png" href="./Assets/apple-icon-152x152.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="/Assets/apple-icon-152x152.png">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>M32 Constructora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="./Style/styles.css">
 </head>
 <body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
 
-    <!--Cabecera-->
-    <header class="header" id="inicio">
-        <!--Menu hamburguesa-->
-        <img src="./Assets/menu-alt-right-regular-24.png" alt="icono menu" class="hamburguer">
-
-        <nav class="menu-navegacion spread">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#expertos">Expertos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-
-        <div class="contenedor head">
-           <h1 class="titulo">M32 Constructora</h1></a>
-            <p class="copy">Tu visión, nuestra misión</p>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__text">M32</span>
+                <div class="preloader__line"></div>
+                <span class="preloader__subtext">CONSTRUCTORA</span>
+            </div>
         </div>
+    </div>
+
+    <!-- Header / Navegación -->
+    <header class="header" id="header">
+        <div class="header__top">
+            <div class="container header__top-content">
+                <div class="header__contact-info">
+                    <a href="mailto:carlos.montemayor@m32constructora.com">
+                        <i class="fas fa-envelope"></i>
+                        carlos.montemayor@m32constructora.com
+                    </a>
+                    <a href="tel:+524423443877">
+                        <i class="fas fa-phone"></i>
+                        +52 44-23-44-38-77
+                    </a>
+                </div>
+                <div class="header__social-top">
+                    <a href="https://www.facebook.com/share/1HYQdtHJKt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arquimontemayor?igsh=MWU1bXB0NDhkOGZyaw==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@arquimontemayor?_r=1&_t=ZS-98SCc49x1QC" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="./Assets/logom32-removebg-preview.png" alt="M32 Constructora" class="nav__logo-img">
+            </a>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link nav__link--active">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#founder" class="nav__link">Fundador</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link nav__link--cta">Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <!--SECCION SERVICIOS-->
     <main>
-        <section class=" contenedor" id="servicio">
-            <h2 class="subtitulo">Nuestros servicios</h2>
-            <div class="contenedor-servicio">
-                <img src="./Assets/architect-98.png" alt="">
-                <div class="checklist-servicio">
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">1</span>Construcción</h3>
-                           En M32 Constructora, entendemos lo importante que es tener un espacio propio, un lugar que refleje tu estilo, tu esfuerzo y tus deseos. Nos especializamos en la construcción a medida, ofreciendo una amplia gama de servicios.
+        <!-- Hero Section - Estilo OPCIC -->
+        <section class="hero" id="home">
+            <div class="hero__slider">
+                <div class="swiper hero-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero__slide">
+                                <img src="./Assets/built-robotics-Bkjia_-86C4-unsplash.jpg" alt="M32 Constructora" class="hero__slide-img">
+                                <div class="hero__slide-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__slide">
+                                <img src="./Assets/muro.JPG" alt="M32 Constructora" class="hero__slide-img">
+                                <div class="hero__slide-overlay"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">2</span>Diseño</h3>
-                            <p>Convertimos tus ideas en planos arquitectónicos precisos y funcionales. Sabemos que un buen diseño es la base de cualquier proyecto exitoso, y estamos aquí para asegurarnos de que tu visión se materialice a la perfección.</p>
+                </div>
+            </div>
+            
+            <div class="hero__content">
+                <div class="container">
+                    <div class="hero__text" data-aos="fade-up" data-aos-duration="1000">
+                        <span class="hero__welcome">Bienvenidos a M32 Constructora</span>
+                        <h1 class="hero__title">
+                            Cimientos <span>Sólidos</span>,<br>Sueños Cumplidos
+                        </h1>
+                        <p class="hero__description">
+                            Más de 20 años de experiencia construyendo proyectos 
+                            residenciales, industriales y comerciales con los más 
+                            altos estándares de calidad y honestidad.
+                        </p>
+                        
+                        <div class="hero__actions">
+                            <a href="#contact" class="btn btn--primary">
+                                <i class="fas fa-phone-alt"></i>
+                                Solicitar cotización
+                            </a>
+                            <a href="#services" class="btn btn--outline-white">
+                                Nuestros servicios
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Remodelación</h3>
-                            <p>Sabemos que tu espacio debe evolucionar contigo. Ya sea tu hogar, oficina o cualquier otro lugar, nuestra misión es reinventar cada rincón para que refleje tu estilo, necesidades y aspiraciones. Ofrecemos remodelaciones integrales para cualquier tipo de espacio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__image" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about__image-wrapper">
+                            <img src="./Assets/casa.jpeg" alt="M32 Constructora" class="about__img">
+                            <div class="about__experience">
+                                <span class="about__experience-number">20+</span>
+                                <span class="about__experience-text">Años de experiencia</span>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="about__content" data-aos="fade-left" data-aos-duration="1000">
+                        <span class="section-label">Quiénes Somos</span>
+                        <h2 class="section-title">Construyendo confianza desde 2024</h2>
+                        <div class="section-divider"></div>
+                        
+                        <p class="about__text">
+                            <strong>M32 Constructora</strong> nace de la visión de ofrecer servicios 
+                            de construcción con un sello distintivo: la honestidad como principio rector. 
+                            Aunque nuestra empresa se fundó en 2024, nuestro equipo está liderado por 
+                            profesionales con más de dos décadas de experiencia en el sector.
+                        </p>
+                        
+                        <p class="about__text">
+                            Nos especializamos en la construcción de casas habitación, naves industriales, 
+                            mantenimiento industrial y general, así como diseño de interiores. Cada proyecto 
+                            es una oportunidad para demostrar nuestro compromiso con la excelencia.
+                        </p>
+                        
+                        <div class="about__features">
+                            <div class="about__feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Misión</h4>
+                                    <p>Brindar soluciones integrales de construcción con los más altos estándares de calidad.</p>
+                                </div>
+                            </div>
+                            <div class="about__feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Visión</h4>
+                                    <p>Ser reconocidos como la constructora líder por nuestra calidad y compromiso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#founder" class="btn btn--outline">
+                            Conoce a nuestro fundador
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-label">Nuestros Servicios</span>
+                    <h2 class="section-title">Soluciones integrales en construcción</h2>
+                    <div class="section-divider mx-auto"></div>
+                    <p class="section-description">
+                        Ofrecemos servicios profesionales adaptados a las necesidades 
+                        específicas de cada cliente y proyecto.
+                    </p>
                 </div>
                 
-            </div>
-        </section>
-
-        <!--SECCION GALERIA-->
-        <section class="gallery" id="portafolio">
-            <div class="contenedor">
-                <h2 class="subtitulo">Galeria</h2>
-                <div class="contenedor-galeria">
-                  <img src="./Assets/cocina.jpeg"alt="cocina"         class="img-galeria">
-                  <img src="./Assets/carrizo-roof.jpeg" alt="carrizo" class="img-galeria">
-                  <img src="./Assets/casa2.jpeg" alt="casa2"          class="img-galeria">
-                  <img src="./Assets/aplanando.jpeg" alt="aplanando"  class="img-galeria">
-                  <img src="./Assets/muro.JPG" alt="muro"             class="img-galeria">
-                  <img src="./Assets/carrizo.jpeg" alt="carrizo2"     class="img-galeria">
+                <div class="services__grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card__image">
+                            <img src="./Assets/cumbres.jpeg" alt="Construcción de Casas">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3 class="service-card__title">Construcción de Casas</h3>
+                            <p class="service-card__description">
+                                Diseñamos y construimos hogares personalizados con acabados 
+                                de primera calidad y materiales duraderos.
+                            </p>
+                            <a href="#contact" class="service-card__link">
+                                Solicitar información
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__image">
+                            <img src="./Assets/nave-indus.jpeg" alt="Naves Industriales">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h3 class="service-card__title">Naves Industriales</h3>
+                            <p class="service-card__description">
+                                Construimos naves industriales funcionales, seguras y 
+                                eficientes para optimizar sus operaciones.
+                            </p>
+                            <a href="#contact" class="service-card__link">
+                                Solicitar información
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card__image">
+                            <img src="./Assets/industrial.jpeg" alt="Mantenimiento Industrial">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="service-card__title">Mantenimiento Industrial</h3>
+                            <p class="service-card__description">
+                                Servicios preventivos y correctivos para garantizar 
+                                la continuidad operativa de sus instalaciones.
+                            </p>
+                            <a href="#contact" class="service-card__link">
+                                Solicitar información
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card__image">
+                            <img src="img/placeholder-project.jpg" alt="Diseño de Interiores">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <i class="fas fa-paint-roller"></i>
+                            </div>
+                            <h3 class="service-card__title">Diseño de Interiores</h3>
+                            <p class="service-card__description">
+                                Transformamos espacios con diseños innovadores que 
+                                combinan estética y funcionalidad.
+                            </p>
+                            <a href="#contact" class="service-card__link">
+                                Solicitar información
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-card__image">
+                            <img src="img/placeholder-project.jpg" alt="Proyectos Arquitectónicos">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <h3 class="service-card__title">Proyectos Arquitectónicos</h3>
+                            <p class="service-card__description">
+                                Desarrollamos proyectos integrales desde el concepto 
+                                hasta la ejecución final de la obra.
+                            </p>
+                            <a href="#contact" class="service-card__link">
+                                Solicitar información
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-card__image">
+                            <img src="img/placeholder-project.jpg" alt="Mantenimiento General">
+                        </div>
+                        <div class="service-card__content">
+                            <div class="service-card__icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="service-card__title">Mantenimiento General</h3>
+                            <p class="service-card__description">
+                                Soluciones integrales para propiedades residenciales 
+                                y comerciales con calidad garantizada.
+                            </p>
+                            <a href="#contact" class="service-card__link">
+                                Solicitar información
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="imagen-light">
-            <img src="/Assets/icons8-close.svg" alt="close" class="close">
-          
-
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stats__item" data-aos="fade-up" data-aos-delay="100">
+                        <span class="stats__number" data-counter="200">0</span>
+                        <span class="stats__plus">+</span>
+                        <span class="stats__label">Proyectos completados</span>
+                    </div>
+                    <div class="stats__item" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stats__number" data-counter="20">0</span>
+                        <span class="stats__plus">+</span>
+                        <span class="stats__label">Años de experiencia</span>
+                    </div>
+                    <div class="stats__item" data-aos="fade-up" data-aos-delay="300">
+                        <span class="stats__number" data-counter="100">0</span>
+                        <span class="stats__plus">%</span>
+                        <span class="stats__label">Clientes satisfechos</span>
+                    </div>
+                    <div class="stats__item" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stats__number" data-counter="6">0</span>
+                        <span class="stats__label">Servicios especializados</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!--SECCION EXPERTOS-->
-        <section class="contenedor" id="expertos">
-            <h2 class="subtitulo">Expertos en:</h2>
-            <section class="experts">
-                <div class="cont-expert">
-                    <img src="./Assets/construction-worker-27.png" alt="worker">
-                    <h3 class="n-expert">Diseño y construcción</h3>
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-label">Portafolio</span>
+                    <h2 class="section-title">Proyectos realizados</h2>
+                    <div class="section-divider mx-auto"></div>
+                    <p class="section-description">
+                        Conozca algunos de los proyectos que hemos entregado 
+                        con éxito a nuestros clientes.
+                    </p>
                 </div>
+            </div>
+            
+            <div class="projects__gallery" data-aos="fade-up">
+                <div class="swiper projects-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="img/placeholder-project.jpg" alt="Proyecto 1">
+                                <div class="project-card__info">
+                                    <span class="project-card__category">Residencial</span>
+                                    <h3 class="project-card__title">Casa Residencial Moderna</h3>
+                                    <p class="project-card__location">
+                                        <i class="fas fa-map-marker-alt"></i> Monterrey, NL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="img/placeholder-project.jpg" alt="Proyecto 2">
+                                <div class="project-card__info">
+                                    <span class="project-card__category">Industrial</span>
+                                    <h3 class="project-card__title">Nave Industrial Norte</h3>
+                                    <p class="project-card__location">
+                                        <i class="fas fa-map-marker-alt"></i> San Nicolás, NL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="img/placeholder-project.jpg" alt="Proyecto 3">
+                                <div class="project-card__info">
+                                    <span class="project-card__category">Interiores</span>
+                                    <h3 class="project-card__title">Diseño Interior Corporativo</h3>
+                                    <p class="project-card__location">
+                                        <i class="fas fa-map-marker-alt"></i> San Pedro, NL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="img/placeholder-project.jpg" alt="Proyecto 4">
+                                <div class="project-card__info">
+                                    <span class="project-card__category">Mantenimiento</span>
+                                    <h3 class="project-card__title">Mantenimiento Planta Industrial</h3>
+                                    <p class="project-card__location">
+                                        <i class="fas fa-map-marker-alt"></i> Apodaca, NL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination projects__pagination"></div>
+                </div>
+            </div>
+        </section>
 
-                <div class="cont-expert">
-                    <img src="./Assets/construction-site-1-40-7f760.png" alt="construction">
-                    <h3 class="n-expert">Remodelación</h3>
+        <!-- Founder Section -->
+        <section class="founder" id="founder">
+            <div class="container">
+                <div class="founder__grid">
+                    <div class="founder__image" data-aos="fade-right">
+                        <div class="founder__image-wrapper">
+                            <img src="img/founder.jpg" alt="Carlos Montemayor" class="founder__img">
+                        </div>
+                    </div>
+                    
+                    <div class="founder__content" data-aos="fade-left">
+                        <span class="section-label">Fundador</span>
+                        <h2 class="section-title">Carlos Montemayor</h2>
+                        <div class="section-divider"></div>
+                        
+                        <p class="founder__text">
+                            Con más de <strong>20 años de experiencia</strong> en la industria 
+                            de la construcción, Carlos Montemayor fundó M32 Constructora en 2024 
+                            con un propósito claro: ofrecer servicios de construcción basados en 
+                            la honestidad, la calidad y el compromiso absoluto con cada cliente.
+                        </p>
+                        
+                        <p class="founder__text">
+                            Su trayectoria abarca proyectos residenciales, industriales y comerciales, 
+                            lo que le ha permitido desarrollar un conocimiento integral del sector 
+                            y conformar un equipo de profesionales altamente capacitados.
+                        </p>
+                        
+                        <blockquote class="founder__quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"No construimos solo estructuras, construimos los sueños de las personas. Y eso requiere honestidad, pasión y excelencia en cada detalle."</p>
+                        </blockquote>
+                        
+                        <div class="founder__contact">
+                            <a href="#contact" class="btn btn--primary">
+                                <i class="fas fa-phone-alt"></i>
+                                Contactar ahora
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="cont-expert">
-                    <img src="./Assets/construction-site-59.png" alt="">
-                    <h3 class="n-expert">Herreria y estructuras</h3>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__form-wrapper" data-aos="fade-right">
+                        <span class="section-label">Contacto</span>
+                        <h2 class="section-title">Solicite su cotización</h2>
+                        <div class="section-divider"></div>
+                        <p class="contact__text">
+                            Complete el formulario y le atenderemos personalmente 
+                            vía WhatsApp en menos de 24 horas.
+                        </p>
+                        
+                        <form class="contact__form" id="whatsapp-form">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <input type="text" id="name" class="form__input" required>
+                                    <label for="name">Nombre completo *</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="tel" id="phone" class="form__input" required>
+                                    <label for="phone">Teléfono WhatsApp *</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="email" id="email" class="form__input">
+                                <label for="email">Correo electrónico</label>
+                            </div>
+                            
+                            <div class="form__group">
+                                <select id="service" class="form__input form__select" required>
+                                    <option value="" disabled selected>Seleccione un servicio</option>
+                                    <option value="Construcción de Casas">Construcción de Casas</option>
+                                    <option value="Naves Industriales">Naves Industriales</option>
+                                    <option value="Mantenimiento Industrial">Mantenimiento Industrial</option>
+                                    <option value="Mantenimiento General">Mantenimiento General</option>
+                                    <option value="Diseño de Interiores">Diseño de Interiores</option>
+                                    <option value="Proyectos Arquitectónicos">Proyectos Arquitectónicos</option>
+                                    <option value="Otro">Otro servicio</option>
+                                </select>
+                                <label for="service">Servicio de interés *</label>
+                            </div>
+                            
+                            <div class="form__group">
+                                <textarea id="message" class="form__input form__textarea" rows="4" required></textarea>
+                                <label for="message">Describa su proyecto *</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full">
+                                <i class="fab fa-whatsapp"></i>
+                                Enviar por WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact__info" data-aos="fade-left">
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Teléfono</h3>
+                            <p>+524423443877</p>
+                        </div>
+                        
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>carlos.montemayor@m32constructora.com</p>
+                        </div>
+                        
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Horario de atención</h3>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                        </div>
+                        
+                        <div class="contact__info-cta">
+                            <p>¿Prefiere contacto directo?</p>
+                            <a href="https://wa.me/+524423443877" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                                Chatear por WhatsApp
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
-    
-    <!--EXPERTOS-->
-    <footer id="contacto">
-        <div class="contenedor footer-content">
-            <div class="contact-us">
-                <h2 class="brand">M32 Cosntructora</h2>
-                <p>Tu socio confiable en la construcción personalizada.</p>
-            </div>
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=61559998756600" target="_blank"    class="social-media-icon">
-                   <i class='bx bxl-facebook'></i>
-                </a>
 
-                <a href="https://www.instagram.com/m32.constructora/" target="_blank" class="social-media-icon">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-
-                <a href="https://www.tiktok.com/@m32constructora?_t=8oIWhAR3sCj&_r=1" target="_blank" class="social-media-icon">
-                    <i class='bx bxl-tiktok'></i>
-                </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <img src="./Assets/logom32-removebg-preview.png" alt="M32 Constructora" class="footer__logo">
+                        <p class="footer__description">
+                            Construyendo confianza, edificando futuro. 
+                            Cimientos sólidos, sueños cumplidos.
+                        </p>
+                        <div class="footer__social">
+                            <a href="https://tiktok.com/@m32constructora" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://facebook.com/m32constructora" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/m32constructora" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__links-col">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#services">Construcción de Casas</a></li>
+                            <li><a href="#services">Naves Industriales</a></li>
+                            <li><a href="#services">Mantenimiento Industrial</a></li>
+                            <li><a href="#services">Diseño de Interiores</a></li>
+                            <li><a href="#services">Proyectos Arquitectónicos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__links-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Nosotros</a></li>
+                            <li><a href="#projects">Proyectos</a></li>
+                            <li><a href="#founder">Fundador</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__links-col">
+                        <h4>Contacto</h4>
+                        <ul class="footer__contact-list">
+                            <li><i class="fas fa-envelope"></i> carlos.montemayor@m32constructora.com</li>
+                            <li><i class="fas fa-phone"></i> 524423443877</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Querétaro , Querétaro</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="line"></div>
+        
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 M32 Constructora. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
-    <script src="./JS/menu.js"></script>
-    <script src="./JS/lightbox.js"></script>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/524423443877" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
-
