@@ -39,8 +39,25 @@ setTheme(getTheme());
 themeToggle.addEventListener('click', () => setTheme(getTheme() === 'light' ? 'dark' : 'light'));
 
 // ========== HERO SWIPER ==========
+
 new Swiper('.hero-swiper', {
-    slidesPerView: 1, loop: true, autoplay: { delay: 5000 }, effect: 'fade', speed: 1000,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    speed: 1200,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+    },
+    allowTouchMove: false,
+    observer: true,
+    observeParents: true,
+    watchSlidesProgress: true,
 });
 
 // ========== PROJECTS SWIPER ==========
@@ -85,7 +102,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', (e) => {
     if (email) msg += `📧 *Email:* ${email}%0A`;
     msg += `🔧 *Servicio:* ${service}%0A📝 *Mensaje:* ${message}`;
     
-    window.open(`https://wa.me/521234567890?text=${msg}`, '_blank');
+    window.open(`https://wa.me/4423443877?text=${msg}`, '_blank');
     document.getElementById('whatsapp-form').reset();
 });
 
